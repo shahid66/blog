@@ -12,7 +12,7 @@ const moduleRoutes = [
   },
 
   {
-    path: '/blog',
+    path: '/blogs',
     route: BlogRoutes,
   },
   {
