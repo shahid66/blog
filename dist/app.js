@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
     res.send('welcome');
 });
 // application routes
-app.use('/api/v1', routes_1.default);
+app.use('/api', routes_1.default);
 app.use(globalErrorhandler_1.default);
 app.use(notFound_1.default);
 exports.default = app;
