@@ -13,6 +13,9 @@ app.use(express_1.default.json());
 app.get('/', (req, res) => {
     res.send('welcome');
 });
+app.get('/api', (req, res) => {
+    res.send('welcome2');
+});
 // application routes
 app.use('/api', routes_1.default);
 app.use(globalErrorhandler_1.default);
