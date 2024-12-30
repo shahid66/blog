@@ -11,6 +11,9 @@ app.use(express.json());
 app.get('/', (req, res) => {
   res.send('welcome');
 });
+app.get('/api', (req, res) => {
+  res.send('welcome2');
+});
 
 // application routes
 app.use('/api', router);
