@@ -7,7 +7,8 @@ import { User } from './user.model';
 
 const createUserIntoDB = async (payload: IUser) => {
   const result = await User.create(payload);
-  return result;
+  const user = await User.findById(result._id);
+  return user;
 };
 
 const loginUser = async (payload: TLoginUser) => {
